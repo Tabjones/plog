@@ -1,8 +1,13 @@
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3)
 
 option(PLOG_BUILD_SAMPLES "Build plog's samples." ON)
 
-project(plog LANGUAGES CXX)
+project(plog 
+	VERSION
+	  1.1.4
+	LANGUAGES
+       	  CXX
+)
 
 # Make sure install paths work on all platforms.
 if(NOT CMAKE_INSTALL_INCLUDEDIR)
